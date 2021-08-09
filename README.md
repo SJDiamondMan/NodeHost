@@ -1,2 +1,5 @@
 # NodeHost
-Host your own web server.
+
+### Features
+- Can be hosted on any port.
+- Can link a file.
