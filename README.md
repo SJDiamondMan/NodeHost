@@ -1,5 +1,5 @@
 # NodeHost
 
 ### Features
-- Can be hosted on any port.
+- Anywhere Anytime host it.
 - Can link a file.
