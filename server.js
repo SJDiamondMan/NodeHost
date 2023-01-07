@@ -1,10 +1,10 @@
 const express = require('express')
 const server = express()
 const config = require('./config.json')
-
-server.get('/', (req, res) => {
-    res.sendFile(__dirname + '/' + config.webdir + '/' + config.index)
+const path = require('path')
+server.use(express.static(path.join(__dirname, ''.join(config.webdir)))
+server.listen(config.port, () => {
+    console.log('[Console] Starting Server on Port: ' + config.port)
+    console.log('[Console] Setting WebDir: ' + config.webdir)
+    console.log('[Console] Setting Index: ' + config.index)
 });
-server.listen(config.port, () => console.log('[Console] Starting Server on Port: ' + config.port));
-console.log('[Console] Setting WebDir' + config.webdir)
-console.log('[Console] Setting Index: ' + config.index)
